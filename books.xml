@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+  <book>
+    <title>JavaScript Basics</title>
+    <author>John Smith</author>
+    <category>Programming</category>
+  </book>
+  <book>
+    <title>HTML and CSS Design</title>
+    <author>Sarah Johnson</author>
+    <category>Web Design</category>
+  </book>
+  <book>
+    <title>Learning PHP</title>
+    <author>Michael Brown</author>
+    <category>Server-Side Programming</category>
+  </book>
+  <book>
+    <title>jQuery Web Effects</title>
+    <author>Lisa Carter</author>
+    <category>JavaScript Library</category>
+  </book>
+</books>

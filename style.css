@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Roboto',sans-serif;
+    background:linear-gradient(to bottom right,#eef2ff,#e2e8f0);
+    color:#222;
+}
+
+nav {
+  background: linear-gradient(to right,#020617,#0f172a);
+  padding: 16px 20px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #60a5fa;
+}
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:20px;
+    color:#111827;
+}
+
+.hero p{
+    font-size:1.2rem;
+    max-width:700px;
+    margin:auto;
+    line-height:1.7;
+}
+
+.projects{
+    width:90%;
+    max-width:1100px;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 14px 25px rgba(0,0,0,0.12);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#2563eb;
+}
+
+.card p{
+    line-height:1.6;
+}
+
+.card {
+  text-decoration: none;
+  color: #222;
+}
+
+input,
+textarea,
+button,
+select {
+  padding: 10px;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.2s ease;
+  font-size: 16px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+}
+
+textarea {
+  resize: none;
+}
+
+.doc-list {
+  list-style: none;
+  padding: 0;
+}
+
+.doc-list li {
+  margin: 15px 0;
+}
+
+.doc-list a {
+  text-decoration: none;
+  color: #2563eb;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.doc-list a:hover {
+  color: #1d4ed8;
+}
+
+.message-box {
+  margin: 25px auto 0;
+  max-width: 600px;
+  background: #f8fafc;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: left;
+}
+
+.message-box p {
+  margin-bottom: 12px;
+}

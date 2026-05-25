@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bronx Business Invoice | Invoice</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="main-nav">
+    <div class="nav-logo">Bronx Business Invoice</div>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="invoice.html">Invoice</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <div class="invoice">
+    <header>
+      <h1>Bronx Business Invoice</h1>
+      <p>Professional Services Invoice</p>
+    </header>
+
+    <section class="top-info">
+      <div>
+        <h2>Invoice #100</h2>
+        <label>Date:</label>
+        <input type="date" id="invoiceDate">
+      </div>
+
+      <div>
+        <h2>Bill To</h2>
+        <input type="text" placeholder="Customer Name">
+        <input type="text" placeholder="Address">
+        <input type="text" placeholder="Phone">
+      </div>
+
+      <div>
+        <h2>For</h2>
+        <input type="text" placeholder="Product/Service Description">
+      </div>
+    </section>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Item Description</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+
+      <tbody id="items">
+        <tr>
+          <td><input type="text" placeholder="Item 1"></td>
+          <td><input type="number" class="amount" value="0"></td>
+        </tr>
+
+        <tr>
+          <td><input type="text" placeholder="Item 2"></td>
+          <td><input type="number" class="amount" value="0"></td>
+        </tr>
+
+        <tr>
+          <td><input type="text" placeholder="Item 3"></td>
+          <td><input type="number" class="amount" value="0"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button onclick="addRow()">Add Row</button>
+    <button onclick="clearForm()">Clear</button>
+    <button onclick="window.print()">Print Invoice</button>
+
+    <section class="totals">
+      <label>Subtotal:</label>
+      <input type="text" id="subtotal" readonly>
+
+      <label>Tax Rate %:</label>
+      <input type="number" id="taxRate" value="8.875">
+
+      <label>Other Costs:</label>
+      <input type="number" id="otherCosts" value="0">
+
+      <label class="total-label">Total Cost:</label>
+      <input type="text" id="totalCost" readonly>
+    </section>
+
+    <footer class="invoice-footer">
+      <p>Make all checks payable to Bronx Business Invoice</p>
+      <p>
+        If you have any questions concerning this invoice, use the following contact information:
+      </p>
+      <p>Contact Name, Phone Number, Email</p>
+      <p>Thank you for your business!</p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
